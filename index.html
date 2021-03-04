@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="loader()">
+    <div id="loading"></div>
     <nav id="navbar">
         <div id="logo">
             <img src="images/Logo/linkedin_profile_image.png" alt="DeepakMeals.com">
@@ -22,13 +23,6 @@
             <li class="item"><a href="#client-section" >Our Clients</a></li>
             <li class="item"><a href="#contact" >Contact Us</a></li>
         </ul>
-
-        <section class="right">
-             
-                <button class="btn1"><a href="tel:+8446694767">Call US </a></button>
-                <button class="btn1"><a href="mailto:dsarode013@gmail.com">Email Us</a></button>
-   
-        </section>
     </nav>
 
     <section id="home">
@@ -44,7 +38,7 @@
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
-                <img src="img/1.png" alt="">
+                <img src="images/1.png" alt="">
                 <h2 class="h-secondary center">Food Catering</h2>
                 <p class="center">
                     We Also Offer Food Catering Services
@@ -53,14 +47,14 @@
                
             </div>
             <div class="box">
-                <img src="img/2.png" alt="">
+                <img src="images/2.png" alt="">
                 <h2 class="h-secondary center">Bulk Ordering</h2>
                 <p class="center">
                     We Also Provide Bulk Ordering.You Can Order More Items at specific Discounts.
                 </p>
             </div>
             <div class="box">
-                <img src="img/3.png" alt="">
+                <img src="images/3.png" alt="">
                 <h2 class="h-secondary center">Food Ordering</h2>
                 <p class="center">
 
@@ -76,17 +70,17 @@
         <h1 class="h-primary center">Our Clients</h1>
         <div id="clients">
             <div class="client-item">
-                <img src="img/logo1.png" alt="Our Client">
+                <img src="images/logo1.png" alt="Our Client">
             </div>
             <div class="client-item">
-                <img src="img/logo2.png" alt="Our Client">
+                <img src="images/logo2.png" alt="Our Client">
             </div>
           
             <div class="client-item">
-                <img src="img/logo4.png" alt="Our Client">
+                <img src="images/logo3.png" alt="Our Client">
             </div>
             <div class="client-item">
-                <img src="img/logo3.png" alt="Our Client">
+                <img src="images/logo4.png" alt="Our Client">
             </div>
         </div>
 
@@ -131,6 +125,8 @@
 
     <script>
 
+        var preloader = document.getElementById('loading');
+
         function mysubmit(){
 
             alert("Thanks For Contacting Us");
@@ -141,6 +137,10 @@
             alert("Due to lockdown.. We are not Accepting Orders");
         }
 
+        function loader(){
+
+            preloader.style.display = 'none';
+        }
 
     </script>
 </body>
